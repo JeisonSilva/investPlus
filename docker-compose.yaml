@@ -1,0 +1,79 @@
+version: '3'
+services:
+  investplusapi_contas:
+    build: 
+      context: ./src/investPlus.contas.api
+      dockerfile: Dockerfile
+    image: investplusapicontas:0.0.0
+    container_name: investplusapi_conta
+    restart: unless-stopped
+    ports:
+      - "5000:8080"
+    depends_on:
+      - postgres
+      - rabbitmq
+  investplusapi_recebimento:
+    build: 
+      context: ./src/investPlus.recebimentos.api
+      dockerfile: Dockerfile
+    image: investplusapirecebimento:0.0.0
+    container_name: investplusapi_recebimento
+    restart: unless-stopped
+    ports:
+      - "5001:8080"
+    depends_on:
+      - postgres
+      - rabbitmq
+  investplusapi_pagamento:
+    build: 
+      context: ./src/investPlus.pagamentos.api
+      dockerfile: Dockerfile
+    image: investplusapipagamento:0.0.0
+    container_name: investplusapi_pagamento
+    restart: unless-stopped
+    ports:
+      - "5002:8080"
+    depends_on:
+      - postgres
+      - rabbitmq
+  investplusapi_saldoDiario:
+    build: 
+      context: ./src/investPlus.saldoDiario.api
+      dockerfile: Dockerfile
+    image: investplusapisaldodiario:0.0.0
+    container_name: investplusapi_saldodiario
+    restart: unless-stopped
+    ports:
+      - "5003:8080"
+    depends_on:
+      - postgres
+      - rabbitmq
+  postgres:
+    image: postgres:latest
+    container_name: postgres_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root@admin
+      POSTGRES_DB: contas
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq_server
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: root
+      RABBITMQ_DEFAULT_PASS: root@admin
+    ports:
+      - "5672:5672"    # RabbitMQ default port
+      - "15672:15672"  # RabbitMQ Management Plugin port
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+volumes:
+  postgres_data:
+  rabbitmq_data:

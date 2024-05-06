@@ -1,0 +1,6 @@
+@investPlus.contas.api_HostAddress = http://localhost:5005
+
+GET {{investPlus.contas.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

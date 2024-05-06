@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E11B4148-4DB2-4745-946E-3115B26DC20B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "investPlus.contas", "src\investPlus.contas\investPlus.contas.csproj", "{6558E17F-CF12-4BA0-AEE2-96100C5DFD1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "investPlus.contas.tests", "src\investPlus.contas.tests\investPlus.contas.tests.csproj", "{D6ACC0F7-1611-4083-B2E6-316DFCE5EEFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "investPlus.contas.api", "src\investPlus.contas.api\investPlus.contas.api.csproj", "{97C11BE6-822E-44D6-864C-02ECD7EFFD59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "investPlus.recebimentos.api", "src\investPlus.recebimentos.api\investPlus.recebimentos.api.csproj", "{659B85F5-59DB-4BC0-8245-7C10E5FA3D49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "investPlus.saldoDiario.api", "src\investPlus.saldoDiario.api\investPlus.saldoDiario.api.csproj", "{01419778-3ACA-431D-9054-DBDE6DFE9E54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6558E17F-CF12-4BA0-AEE2-96100C5DFD1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6558E17F-CF12-4BA0-AEE2-96100C5DFD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6558E17F-CF12-4BA0-AEE2-96100C5DFD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6558E17F-CF12-4BA0-AEE2-96100C5DFD1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6ACC0F7-1611-4083-B2E6-316DFCE5EEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6ACC0F7-1611-4083-B2E6-316DFCE5EEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6ACC0F7-1611-4083-B2E6-316DFCE5EEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6ACC0F7-1611-4083-B2E6-316DFCE5EEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97C11BE6-822E-44D6-864C-02ECD7EFFD59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C11BE6-822E-44D6-864C-02ECD7EFFD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C11BE6-822E-44D6-864C-02ECD7EFFD59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C11BE6-822E-44D6-864C-02ECD7EFFD59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{659B85F5-59DB-4BC0-8245-7C10E5FA3D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659B85F5-59DB-4BC0-8245-7C10E5FA3D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659B85F5-59DB-4BC0-8245-7C10E5FA3D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659B85F5-59DB-4BC0-8245-7C10E5FA3D49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01419778-3ACA-431D-9054-DBDE6DFE9E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01419778-3ACA-431D-9054-DBDE6DFE9E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01419778-3ACA-431D-9054-DBDE6DFE9E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01419778-3ACA-431D-9054-DBDE6DFE9E54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6558E17F-CF12-4BA0-AEE2-96100C5DFD1A} = {E11B4148-4DB2-4745-946E-3115B26DC20B}
+		{D6ACC0F7-1611-4083-B2E6-316DFCE5EEFE} = {E11B4148-4DB2-4745-946E-3115B26DC20B}
+		{97C11BE6-822E-44D6-864C-02ECD7EFFD59} = {E11B4148-4DB2-4745-946E-3115B26DC20B}
+		{659B85F5-59DB-4BC0-8245-7C10E5FA3D49} = {E11B4148-4DB2-4745-946E-3115B26DC20B}
+		{01419778-3ACA-431D-9054-DBDE6DFE9E54} = {E11B4148-4DB2-4745-946E-3115B26DC20B}
+	EndGlobalSection
+EndGlobal
